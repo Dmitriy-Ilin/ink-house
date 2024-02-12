@@ -14,11 +14,11 @@ const paintSlice = createSlice({
     name: 'paint',
     initialState,
     reducers: {
-        addToCart: (state, payload) => {
+        // addToCart: (state, payload) => {
           
-        }
+        // }
     }
 })
 
-export const {addToCart} = paintSlice.actions;
+// export const {addToCart} = paintSlice.actions;
 export default paintSlice.reducer;

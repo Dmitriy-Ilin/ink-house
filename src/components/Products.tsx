@@ -3,7 +3,7 @@ import France from './France'
 import Germany from './Germany';
 import England from './England';
 
-const Products = () => {
+const Products: React.FC = () => {
   const [isActive, setIsActive] = useState(1);
 
   let returningItem;

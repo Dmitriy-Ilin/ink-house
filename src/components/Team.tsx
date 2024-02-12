@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Team = () => {
+const Team: React.FC = () => {
   return (
     <section className='team'>
         <div className='container'>

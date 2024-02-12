@@ -1,6 +1,5 @@
 import React from 'react'
 import { IItem } from '../types/types'
-import { useAppDispatch, useAppSelector } from '../hooks/hooks'
 
 type PaintItemProps = {
     paint: IItem
