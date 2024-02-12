@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: $font-main;
+    background-color: $bg-color;
+    color: $dark;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+a {
+    color: inherit;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.main-body {
+    position: relative;
+
+    &--active {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    color: $accent;
+    background-color: transparent;
+    border: 1px solid $accent;
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: $white;
+        background-color: $accent;
+    }
+}

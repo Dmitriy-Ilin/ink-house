@@ -1,0 +1,31 @@
+.mobile__menu {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 130px;
+    left: -100%;
+    transform: translateX(-100%);
+    bottom: 0;
+    right: 0;
+    background-color: $bg-accent;
+    padding: 20px;
+    transition: transform  0.3s ease;
+
+    @include mediaPhone-bg {
+        display: block;
+    }
+
+    &--active {
+        left: 0%;
+        transform: translateX(0%);
+    }
+}
+
+
+.mobile__menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}

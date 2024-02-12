@@ -1,0 +1,102 @@
+.header-navigation {
+    background-color: $bg-accent;
+    padding: 33px 0;
+
+    @include mediaHeader {
+        padding: 20px 0;
+    }
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mediaHeader {
+        flex-direction: column;
+    }
+}
+
+.header__top > a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @include mediaPhone-bg {
+        display: none;
+    }
+}
+
+.header__main {
+    @include mediaTablet-bg {
+        margin-top: 40px;
+    }
+}
+
+.header__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    color: $accent;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header__img {
+
+    @include mediaTablet-bg {
+        display: none;
+    }
+}
+
+.header__img img {
+    min-width: clamp(9.75rem, -6.53rem + 53.71vw, 33.75rem);
+    height: clamp(11.938rem, -6.292rem + 60.14vw, 38.813rem);
+}
+
+.header__title {
+    font-size: 60px;
+    line-height: 110%;
+    text-align: left;
+
+    &--accent {
+        color: $accent;
+    }
+
+    @include mediaTablet-bg {
+        font-size: 40px;
+        line-height: 100%;
+    }
+}
+
+.header__text {
+    margin-top: 20px;
+    color: $grey;
+
+    @include mediaTablet-bg {
+        font-size: 16px;
+    }
+}
+
+.header__btn {
+    margin-top: 60px;
+
+    @include mediaTablet-bg {
+        margin-top: 20px;
+    }
+}
+
+.header__btn button {
+    padding: 20px 60px;
+
+    @include mediaTablet-bg {
+     
+    }
+}
+
+

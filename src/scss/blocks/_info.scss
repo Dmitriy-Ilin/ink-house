@@ -1,0 +1,71 @@
+.info {
+    margin-top: 70px;
+    padding: 70px 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.001), rgba(0, 0, 0, 0.9)),
+    url('/src/assets/main2.jpg') 50% / cover no-repeat;
+}
+
+.info__top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info__top-star {
+
+    @include mediaPhone-bg {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+.info__top-title {
+    max-width: 420px;
+    font-size: 40px;
+    line-height: 100%;
+    color: $bg-color;
+
+    @include mediaTablet {
+        font-size: 30px;
+    }
+
+    @include mediaPhone-bg {
+        font-size: 24px;
+    }
+}
+
+.info__text {
+    margin-top: 20px;
+    max-width: 540px;
+    line-height: 150%;
+    color: $white;
+
+    @include mediaPhone-bg {
+        font-size: 16px;
+    }
+}
+
+.info__text p ~ p {
+    margin-top: 20px;
+}
+
+.info__btn {
+    margin-top: 60px;
+
+    @include mediaPhone-bg {
+        margin-top: 30px;
+    }
+}
+
+.info__btn button {
+    padding: 20px 60px;
+    font-size: 20px;
+    line-height: 23px;
+    color: $dark;
+    background-color: $btn-bg-yellow;
+    border: 1px solid $btn-bg-yellow;
+
+    @include mediaPhone-bg {
+        width: 100%;
+    }
+}

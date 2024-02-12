@@ -1,0 +1,24 @@
+@mixin mediaTablet-bg() {
+    @media screen and (max-width: $tablet-bg) {
+        @content;
+    }
+}
+
+@mixin mediaTablet() {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mediaHeader() {
+    @media screen and (max-width: $header-nav) {
+        @content;
+    }
+}
+
+@mixin mediaPhone-bg() {
+    @media screen and (max-width: $phone-bg) {
+        @content;
+    }
+}
+

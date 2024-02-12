@@ -1,0 +1,45 @@
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    column-gap: 60px;
+}
+
+.nav__item {
+    font-size: 20px;
+    line-height: 23px;
+
+    @include mediaTablet-bg {
+        font-size: 18px;
+    }
+}
+
+.header__nav {
+    position: relative;
+
+    @include mediaHeader {
+        margin-top: 34px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 0;
+            transform: translateY(-100%);
+            width: 100%;
+            height: 2px;
+            background-color: #C3D1C6;
+        }
+    }
+
+    @include mediaPhone-bg {
+        display: none;
+    }
+}
+
+.nav__item-btn {
+    border: unset;
+    
+    &:hover {
+        background-color: inherit;
+    }
+}
